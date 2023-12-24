@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigationhome">
+
+    <fragment android:id="@+id/navigationhome"
+        android:name="com.example.studentapp.ui.home.homeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment android:id="@+id/navigationnotice"
+        android:name="com.example.studentapp.ui.notice.noticeFragment"
+        android:label="Notice"
+        tools:layout="@layout/fragment_notice"/>
+
+    <fragment android:id="@+id/navigationfaculty"
+        android:name="com.example.studentapp.ui.faculty.facultyFragment"
+        android:label="Faculty"
+        tools:layout="@layout/fragment_faculty"/>
+
+    <fragment android:id="@+id/navigationabout"
+        android:name="com.example.studentapp.ui.about.aboutFragment"
+        android:label="Developers"
+        tools:layout="@layout/fragment_about"/>
+
+    <activity android:id="@+id/navigationresult"
+        android:name="com.example.studentapp.ui.ResultActivity"
+        tools:layout="@layout/activity_result"/>
+
+    <activity android:id="@+id/navigationtimetable"
+        android:name="com.example.studentapp.ui.timetable.TimeTableActivity"
+        tools:layout="@layout/activity_time_table"/>
+
+    <activity android:id="@+id/profile"
+        android:name="com.example.studentapp.profile"
+        tools:layout="@layout/activity_profile"/>
+
+    <activity android:id="@+id/navigationdocs"
+        android:name="com.example.studentapp.ui.ApplyDocs.DocsActivity"
+        android:label="Apply"
+        tools:layout="@layout/activity_docs"/>
+
+    <activity android:id="@+id/navigationapply"
+        android:name="com.example.studentapp.ui.UploadDocsActivity"
+        tools:layout="@layout/activity_upload_docs"/>
+
+    <activity android:id="@+id/navigationlibrary"
+        android:name="com.example.studentapp.ui.LibraryActivity"
+        tools:layout="@layout/activity_library"/>
+
+</navigation>

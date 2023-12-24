@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".UserProfileActivity"
+        android:background="@color/color3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/RL_name">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ic_profile"
+                        android:contentDescription="name"
+                        android:background="@drawable/ic_baseline_person_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignStart="@id/ic_profile"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="40dp"
+                        android:hint="Name" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_name"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/RL_PRN"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@id/divider_name">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ic_PRN"
+                        android:contentDescription="PRN"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_baseline_person_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRN"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textViewPRN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_PRN"
+                        android:layout_marginStart="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="40dp"
+                        android:hint="PRN" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_PRN"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_PRN"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/RL_email"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@id/divider_PRN">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ic_email"
+                        android:contentDescription="email"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_baseline_person_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-Mail"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_email"
+                        android:layout_marginStart="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="40dp"
+                        android:hint="E-Mail" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_email"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/RL_dob"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@id/divider_email">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ic_dob"
+                        android:contentDescription="dob"
+                        android:background="@drawable/ic_baseline_date_range_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOB"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewDOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_dob"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="40dp"
+                        android:hint="DOB" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_dob"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/RL_gender"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@id/divider_dob">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/ic_gender"
+                        android:contentDescription="gender"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_baseline_transgender_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_gender"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="40dp"
+                        android:hint="Gender" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_gender"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RL_mobile"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/divider_gender">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ic_mobile"
+                        android:contentDescription="mobile"
+                        android:background="@drawable/ic_baseline_send_to_mobile_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:layout_marginStart="50dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewMobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignStart="@id/ic_mobile"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="40dp"
+                        android:hint="Mobile" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

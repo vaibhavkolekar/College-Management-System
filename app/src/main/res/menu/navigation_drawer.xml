@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigationprofile"
+        android:title="Profile"
+        />
+
+    <item android:id="@id/navigationdocs"
+        android:title="Apply"
+        />
+
+    <item android:id="@+id/navigationresult"
+        android:title="Result"
+        />
+
+    <item android:id="@id/navigationlibrary"
+        android:title="Library"
+        />
+
+    <item android:id="@+id/navigationabout"
+        android:title="Developers"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+</menu>

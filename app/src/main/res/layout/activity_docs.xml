@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border2"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/textViewPRN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Document"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+         />
+    <Spinner
+        android:id="@+id/document_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Document Type"
+         />
+
+    <EditText
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reason" />
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply" />
+</LinearLayout>

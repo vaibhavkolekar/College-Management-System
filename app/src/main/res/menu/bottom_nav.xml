@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@id/navigationhome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:id="@id/navigationnotice"
+        android:title="Notice"
+        android:icon="@drawable/ic_baseline_notifications_24"/>
+
+    <item android:id="@id/navigationfaculty"
+        android:title="faculty"
+        android:icon="@drawable/ic_faculty" />
+
+    <item android:id="@id/navigationdocs"
+        android:title="Documents"
+        android:icon="@drawable/ic_baseline_article_24"/>
+
+
+
+
+
+    <item android:id="@id/navigationabout"
+        android:title="About Us"
+        android:icon="@drawable/ic_developers"/>
+
+
+    
+
+</menu>

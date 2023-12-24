@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:autoStart="true"
+                android:flipInterval="800"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/pic3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/pic2comp" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/pic1comp" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/pic4comp" />-->
+            </ViewFlipper>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="About College"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Approved by All India Council for Technical Education (AICTE), New Delhi - AICTE and Affiliated with Shivaji University Kolhapur. Institute Code 6644 Shri.Sanjay.P.Bhokare, the Chairman of the institution is a person gifted with a kind of unquenchable thirst for introducing innovativeness is being loved by one and all. The college firmly believes that education is incomplete without discipline, The institution is confident in making a wholesome person out of the student only by instilling in him discipline which would go to foster a high degree of righteousness in and around him. Accordingly, a disciplinary committee monitors the discipline of the institution. Vision"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/color3"
+                android:padding="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+
+                    android:src="@drawable/sanjay_sir"
+                    app:civ_border_color="@color/color2"
+                    app:civ_border_width="2dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="120dp"
+                    android:paddingTop="20dp"
+                    android:text="Hon.Sanjay.P.Bhokare"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chairman"
+                    android:paddingLeft="120dp"
+                    android:paddingTop="40dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/color3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="20dp"
+                    android:text="Mr.Siddharth Bhokare"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="40dp"
+                    android:text="Vice Chairman &amp; Managing Director"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image2"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/siddharth"
+                    app:civ_border_color="@color/color2"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="4dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/color3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="120dp"
+                    android:paddingTop="20dp"
+                    android:text="Ms.Chinamyi Bhokare"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="120dp"
+                    android:paddingTop="40dp"
+                    android:text="Director"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image3"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+
+                    android:src="@drawable/chinmayi"
+                    app:civ_border_color="@color/color2"
+                    app:civ_border_width="2dp"
+                    tools:ignore="MissingConstraints" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/color3"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="20dp"
+                    android:text="Dr.Deepak N Mudgal"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="40dp"
+                    android:text="Executive Director"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="-12dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image4"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+
+                    android:src="@drawable/mudgal"
+                    app:civ_border_color="@color/color2"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="20dp" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#443C68"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Important Links"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dbatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" •  DBATU"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/dte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" •  Directorate of Technical Education"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/aicte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" •  AICTE"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/ugc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" •  UGC"
+                    android:textColor="@color/white"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingLeft="70dp"
+                        android:src="@drawable/location" />
+
+                    <Button
+                        android:id="@+id/locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locate Us"
+                        android:textSize="12dp"
+                        android:paddingLeft="130dp"
+                        android:background="#00000000"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
